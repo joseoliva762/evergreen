@@ -1,0 +1,33 @@
+.form__group {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  justify-content: center;
+  width: 100%;
+
+  .form__label {
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    width: 100%;
+  }
+
+  .form__input {
+    background: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 12px;
+    height: 36px;
+    padding: 4px 16px;
+    outline: none;
+    width: 100%;
+
+    &:focus, &:active, &:hover {
+      border: 1px solid #000000;
+    }
+  }
+}

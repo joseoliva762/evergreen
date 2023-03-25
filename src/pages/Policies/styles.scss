@@ -1,0 +1,109 @@
+.Policies {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+  padding: 0 20px;
+
+  .heading {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    padding: 24px 4px;
+    justify-content: space-between;
+    width: 100%;
+
+    .title {
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 20px;
+      margin: 0;
+    }
+
+    button {
+      max-width: 200px;
+    }
+  }
+
+  .Policies__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 12px;
+    width: 100%;
+    height: 100%;
+    .Policies__container__item {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      width: 100%;
+      height: 120px;
+      border-radius: 4px;
+      background-color: #fff;
+      padding: 12px 20px 16px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+      .info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 4px;
+        width: 100%;
+        height: 100%;
+        .Policies__container__item__title {
+          font-size: 24px;
+          font-weight: 600;
+          margin: 0;
+          color: #0095f6;
+        }
+        .Policies__container__item__description {
+          font-size: 16px;
+          font-weight: 400;
+          margin: 0;
+        }
+        .Policies__container__item__id {
+          font-size: 12px;
+          font-weight: 400;
+          margin: 0;
+          color: #444;
+        }
+      }
+
+      .actions {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 12px;
+        width: 100%;
+        height: 100%;
+        .open {
+          align-items: center;
+          background-color: #fff;
+          // box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+          // border: 1px solid #e5e5e5;
+          border: none;
+          border-radius: 50%;
+          cursor: pointer;
+          display: flex;
+          justify-content: center;
+          height: 36px;
+          transition: all 0.2s ease-in-out;
+          width: 36px;
+
+          &:hover {
+            background-color: #f5f5f5;
+          }
+
+          &:active {
+            background-color: #e5e5e5;
+          }
+        }
+      }
+    }
+  }
+}
